@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBMC Supply and Demand on a Map</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700|Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:i,bi,700,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://lucyzi.github.io/hccilogo/hcciLogo.png" type="image/png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "1eaIggIsZl9GiK_5q",
+            });
+        })();
+    </script>
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(33, 33, 33, 1);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .header img {
+            width: 170px;
+            margin-bottom: 5px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #226E93;
+            margin-top: 0;
+        }
+
+        .header hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+        }
+
+        .container {
+            width:74.5%;
+            max-width: 100%;
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .section-title {
+            font-size: 15pt;
+            font-weight: bold;
+            color: rgba(33, 33, 33, 1);
+        }
+
+        .text {
+            font-size: 14pt;
+            line-height: 2.0;
+            color: rgba(33, 33, 33, 1);
+            margin-top: 25px;
+        }
+
+        a {
+            color: rgba(34, 110, 147, 1);
+            text-decoration: underline;
+        }
+
+        .tableauPlaceholder {
+            position: relative;
+            width: 100%;
+            height: 600px; /* 调整图表高度 */
+            margin-top: 20px;
+        }
+
+        .tableauPlaceholder object {
+            width: 100%;
+            height: 100%;
+            max-width: 100%; /* 确保图表不会超出容器宽度 */
+            box-sizing: border-box; /* 包括padding和border在内的总宽度和高度 */
+        }
+
+        @media (max-width: 800px) {
+            .tableauPlaceholder {
+                height: 450px; /* 调整移动端图表高度 */
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .text {
+                font-size: 12pt;
+                line-height: 1.5;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://lucyzi.github.io/hccilogo/hcciLogo.png" alt="HCCI Logo">
+            <h1>HBMC Supply and Demand on a Map</h1>
+            <hr>
+        </header>
+        <main class="content">
+            <div class='tableauPlaceholder' id='viz1718764431763'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' ' src='https://public.tableau.com/static/images/B_/B_HCCIdashboardHBMCataglance2023_map-dataregroupedatstatelevel/HBMCataGlance_map/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='B_HCCIdashboardHBMCataglance2023_map-dataregroupedatstatelevel/HBMCataGlance_map' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/B_/B_HCCIdashboardHBMCataglance2023_map-dataregroupedatstatelevel/HBMCataGlance_map/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1718764431763');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '900px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '900px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '600px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <section id="frailty">
+                <p class="text"><span class="section-title">Frailty.</span> Frailty is theoretically defined as a clinically recognizable state of increased vulnerability resulting from aging-associated decline in reserve and function across multiple physiologic systems such that the ability to cope with every day or acute stressors is comprised. (Fried LP, Tangen CM, Walston J, et al. Frailty in older adults: evidence for a phenotype. <i>JGerontolA BiolSciMedSci.</i> 2001;56(3):M146–M156. [<a href="https://pubmed.ncbi.nlm.nih.gov/11253156" target="_blank">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=JGerontolA+BiolSciMedSci&title=Frailty+in+older+adults:+evidence+for+a+phenotype&author=LP+Fried&author=CM+Tangen&author=J+Walston&volume=56&issue=3&publication_year=2001&pages=M146-M156&" target="_blank">Google Scholar</a>] [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3028599/#R2" target="_blank">Ref list</a>])</p>
+            </section>
+            <section id="hbmc">
+                <p class="text"><span class="section-title">Home-Based Medical Care (HBMC).</span> Also known as “Home-Based Primary Care (HBPC),” which is a model that combines home-based care for medical needs with intense management, care coordination, as well as long-term services and supports (LTSS) when needed. HBPC interventions have been proposed as an alternative way of organizing and delivering care that may better address the needs, values, and preferences of chronically ill, frail, and disabled patients who have difficulty accessing traditional office-based care primary care or newer models of care that also require office visits. (Source: <a href="https://www.effectivehealthcare.ahrq.gov" target="_blank">www.effectivehealthcare.ahrq.gov</a> Published online: November 19, 2014).</p>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
