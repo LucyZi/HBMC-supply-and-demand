@@ -92,12 +92,15 @@
         }
 
         .tableauPlaceholder {
-            width: 96%; /* 适当调整图表的宽度以确保居中效果 */
+            width: 100%;
+            max-width: 1000px; /* 调整图表最大宽度以确保居中效果 */
             height: 600px; /* 调整图表高度 */
+            display: flex;
+            justify-content: center;
         }
 
         .tableauPlaceholder object {
-            width: 100%; /* 确保object宽度为父容器的100% */
+            width: 100%;
             height: 100%;
         }
 
