@@ -78,25 +78,22 @@
         }
 
         .centered-tableau {
-            width: 95%;
             display: flex;
             justify-content: center;
             margin-top: 20px;
-            overflow: hidden; /* 移除横向滚动条 */
+            overflow: hidden;
         }
 
         .centeringContainer {
-            width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
-            overflow: hidden; /* 移除横向滚动条 */
+            width: 100%;
         }
 
         .tableauPlaceholder {
             width: 100%;
-            max-width: 1000px; /* 调整图表最大宽度以确保居中效果 */
-            height: 600px; /* 调整图表高度 */
+            max-width: 1000px;
+            height: 600px;
         }
 
         .tableauPlaceholder object {
@@ -106,7 +103,7 @@
 
         @media (max-width: 800px) {
             .tableauPlaceholder {
-                height: 450px; /* 调整移动端图表高度 */
+                height: 450px;
             }
 
             .header h1 {
