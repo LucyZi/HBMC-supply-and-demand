@@ -162,23 +162,6 @@
                     </object>
                 </div>
             </div>
-            <script type='text/javascript'>
-                var divElement = document.getElementById('viz1718764431763');
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                if (divElement.offsetWidth > 800) {
-                    vizElement.style.width = '100%';
-                    vizElement.style.height = '900px';
-                } else if (divElement.offsetWidth > 500) {
-                    vizElement.style.width = '100%';
-                    vizElement.style.height = '900px';
-                } else {
-                    vizElement.style.width = '100%';
-                    vizElement.style.height = '600px';
-                }
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
             <section id="frailty">
                 <p class="text"><span class="section-title">Frailty.</span> Frailty is theoretically defined as a clinically recognizable state of increased vulnerability resulting from aging-associated decline in reserve and function across multiple physiologic systems such that the ability to cope with every day or acute stressors is comprised. (Fried LP, Tangen CM, Walston J, et al. Frailty in older adults: evidence for a phenotype. <i>JGerontolA BiolSciMedSci.</i> 2001;56(3):M146–M156. [<a href="https://pubmed.ncbi.nlm.nih.gov/11253156" target="_blank">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=JGerontolA+BiolSciMedSci&title=Frailty+in+older+adults:+evidence+for+a+phenotype&author=LP+Fried&author=CM+Tangen&author=J+Walston&volume=56&issue=3&publication_year=2001&pages=M146-M156&" target="_blank">Google Scholar</a>] [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3028599/#R2" target="_blank">Ref list</a>])</p>
             </section>
@@ -187,6 +170,26 @@
             </section>
         </main>
     </div>
+
+    <script type='text/javascript'>
+        window.onload = function() {
+            var divElement = document.getElementById('viz1718764431763');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '900px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '900px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '600px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        };
+    </script>
 </body>
 
 </html>
